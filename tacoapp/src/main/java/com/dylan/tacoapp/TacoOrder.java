@@ -22,7 +22,7 @@ public class TacoOrder
         tacos.add(taco);
     }
 
-    //constructor
+    //constructors
     public TacoOrder() 
     {
 
@@ -85,6 +85,11 @@ public class TacoOrder
         return ccCVV;
     }
 
+    public List<Taco> getTacos()
+    {
+        return tacos;
+    }
+
     //setters
     public void setDeliveryName(String deliveryName)
     {
@@ -124,6 +129,11 @@ public class TacoOrder
     public void setCcCVV(String ccCVV)
     {
         this.ccCVV = ccCVV;
+    }
+
+    public void setTacos(List<Taco> tacos)
+    {
+        this.tacos = tacos;
     }
 
     //@Override
